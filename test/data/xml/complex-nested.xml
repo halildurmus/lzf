@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This sample XML file is provided by Sample-Files.com. Visit us for more sample files and resources. -->
+<library>
+  <book category="fiction" isbn="978-1234567890">
+    <title>The Great Novel</title>
+    <author>
+      <name>
+        <first>John</first>
+        <last>Doe</last>
+      </name>
+      <biography>
+        <paragraph>John Doe is a renowned author with a passion for storytelling.</paragraph>
+        <paragraph>He has written several bestsellers and continues to inspire readers worldwide.</paragraph>
+      </biography>
+    </author>
+    <publisher>
+      <name>Book Publishers Inc.</name>
+      <location>
+        <city>New York</city>
+        <country>USA</country>
+      </location>
+    </publisher>
+    <chapters>
+      <chapter>
+        <title>Chapter 1: The Beginning</title>
+        <content>
+          <paragraph>It was a dark and stormy night when our story began.</paragraph>
+          <paragraph>The wind howled through the trees, setting the stage for an unforgettable adventure.</paragraph>
+        </content>
+      </chapter>
+      <chapter>
+        <title>Chapter 2: The Journey</title>
+        <content>
+          <paragraph>Our heroes set out on a perilous journey across treacherous lands.</paragraph>
+          <paragraph>Little did they know the challenges that awaited them beyond the horizon.</paragraph>
+        </content>
+      </chapter>
+    </chapters>
+  </book>
+  
+  <book category="non-fiction" isbn="978-0987654321">
+    <title>The Art of XML</title>
+    <author>
+      <name>
+        <first>Jane</first>
+        <last>Smith</last>
+      </name>
+      <biography>
+        <paragraph>Jane Smith is a leading expert in XML and data structures.</paragraph>
+        <paragraph>Her work has revolutionized how we think about organizing information.</paragraph>
+      </biography>
+    </author>
+    <publisher>
+      <name>Tech Books Co.</name>
+      <location>
+        <city>San Francisco</city>
+        <country>USA</country>
+      </location>
+    </publisher>
+    <chapters>
+      <chapter>
+        <title>Chapter 1: Introduction to XML</title>
+        <content>
+          <paragraph>XML has become an essential part of modern data management.</paragraph>
+          <paragraph>In this chapter, we explore the basics and history of XML.</paragraph>
+        </content>
+      </chapter>
+      <chapter>
+        <title>Chapter 2: Advanced XML Techniques</title>
+        <content>
+          <paragraph>Delve into the intricacies of XML schemas and transformations.</paragraph>
+          <paragraph>Learn how to leverage XML for complex data structures and integrations.</paragraph>
+        </content>
+      </chapter>
+    </chapters>
+  </book>
+  
+  <book category="mystery" isbn="978-5678901234">
+    <title>The Enigma Code</title>
+    <author>
+      <name>
+        <first>Emily</first>
+        <last>Johnson</last>
+      </name>
+      <biography>
+        <paragraph>Emily Johnson is a master of suspense and intrigue in her writing.</paragraph>
+        <paragraph>Her mysteries have captivated readers around the globe.</paragraph>
+      </biography>
+    </author>
+    <publisher>
+      <name>Mystery House Publishing</name>
+      <location>
+        <city>London</city>
+        <country>UK</country>
+      </location>
+    </publisher>
+    <chapters>
+      <chapter>
+        <title>Chapter 1: The Mysterious Letter</title>
+        <content>
+          <paragraph>Detective Sarah Blake stared at the cryptic message on her desk.</paragraph>
+          <paragraph>Little did she know, this letter would lead her into a web of international espionage.</paragraph>
+        </content>
+      </chapter>
+      <chapter>
+        <title>Chapter 2: Decoding the Past</title>
+        <content>
+          <paragraph>As Sarah delved deeper into the case, she uncovered a decades-old conspiracy.</paragraph>
+          <paragraph>The truth, she realized, was hidden in plain sight all along.</paragraph>
+        </content>
+      </chapter>
+    </chapters>
+  </book>
+</library>
