@@ -1,0 +1,31 @@
+name: lzf
+
+on:
+  pull_request:
+    paths:
+      - .github/workflows/lzf.yml
+      - lib/**
+      - test/**
+      - pubspec.yaml
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/lzf.yml
+      - lib/**
+      - test/**
+      - pubspec.yaml
+
+jobs:
+  build:
+    uses: halildurmus/workflows/.github/workflows/dart.yml@main
+    with:
+      check_coverage: true
+      format_directories: lib test
+    secrets:
+      CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+
+  dartdoc:
+    uses: halildurmus/workflows/.github/workflows/dartdoc.yml@main
+
+  pana:
+    uses: halildurmus/workflows/.github/workflows/pana.yml@main
