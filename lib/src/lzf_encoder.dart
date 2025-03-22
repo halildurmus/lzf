@@ -4,6 +4,10 @@ import 'dart:typed_data';
 import 'chunk.dart';
 import 'chunk_encoder.dart';
 
+/// A utility class for encoding data into LZF format.
+///
+/// This class provides static methods for encoding raw data into one or more
+/// LZF chunks and coalescing them into a single contiguous [Uint8List].
 abstract final class LZFEncoder {
   /// Encodes the entire [data] buffer.
   ///
@@ -15,7 +19,7 @@ abstract final class LZFEncoder {
   ///
   /// If the data length exceeds [LZFChunk.maxChunkLength], it is split into
   /// multiple chunks which are then coalesced into a single contiguous byte
-  /// array.
+  /// list.
   static Uint8List encodeWithEncoder(ChunkEncoder encoder, Uint8List data) {
     var remaining = data.length;
     var offset = 0;
@@ -51,7 +55,7 @@ abstract final class LZFEncoder {
       currentChunk = nextChunk;
     }
 
-    // Coalesce all chunks into a single contiguous byte array.
+    // Coalesce all chunks into a single contiguous byte list.
     final result = Uint8List(totalBytes);
     offset = 0;
     LZFChunk? chunk = firstChunk;
