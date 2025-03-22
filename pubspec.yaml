@@ -1,17 +1,21 @@
 name: lzf
-description: TODO
+description: A Dart implementation of the LZF, a fast and lightweight data
+  compression algorithm.
 version: 0.1.0
 repository: https://github.com/halildurmus/lzf
 issue_tracker: https://github.com/halildurmus/lzf/issues
 funding:
   - https://github.com/sponsors/halildurmus
 
+topics:
+  - lzf
+  - compression
+
 environment:
   sdk: ^3.7.0
 
 dev_dependencies:
   checks: ^0.3.0
-
   hooks:
     git:
       url: https://github.com/halildurmus/workflows.git
@@ -20,5 +24,4 @@ dev_dependencies:
     git:
       url: https://github.com/halildurmus/workflows.git
       path: packages/lints
-
   test: ^1.25.15

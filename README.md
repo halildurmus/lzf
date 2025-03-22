@@ -75,7 +75,7 @@ Please file feature requests and bugs at the
 [language_link]: https://dart.dev
 [license_badge]: https://img.shields.io/github/license/halildurmus/lzf?color=blue
 [license_link]: https://opensource.org/licenses/BSD-3-Clause
-[LZF Format Specification]: http://web.archive.org/web/20161025225604/https://github.com/ning/compress/wiki/LZFFormat
+[LZF Format Specification]: https://web.archive.org/web/20161025225604/https://github.com/ning/compress/wiki/LZFFormat
 [package_badge]: https://img.shields.io/pub/v/lzf.svg
 [package_link]: https://pub.dev/packages/lzf
 [publisher_badge]: https://img.shields.io/pub/publisher/lzf.svg

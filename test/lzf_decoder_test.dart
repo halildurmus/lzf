@@ -7,7 +7,7 @@ import 'package:test/scaffolding.dart';
 void main() {
   group('LZFDecoder', () {
     test('decodes uncompressed chunk', () {
-      final data = [1, 0, 9, 1, 1, 97, 98, 99, 100, 0, 0, 9, 97, 98, 99];
+      const data = [1, 0, 9, 1, 1, 97, 98, 99, 100, 0, 0, 9, 97, 98, 99];
       final encoded = Uint8List.fromList([
         LZFChunk.byteZ,
         LZFChunk.byteV,
@@ -22,7 +22,7 @@ void main() {
     });
 
     test('decodes compressed chunk', () {
-      final data = [
+      const data = [
         1, 0, 9, 1, 1, 97, 98, 99, 100, 0, 0, 9, 97, 98, 99, 100, 0, 0, 9, //
         97, 98, 99, 100,
       ];
