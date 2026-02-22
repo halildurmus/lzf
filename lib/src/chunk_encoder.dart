@@ -247,10 +247,10 @@ final class ChunkEncoder {
   static const _maxHashSize = 16384;
 
   /// Maximum offset allowed for a back-reference.
-  static const _maxOff = 1 << 13;
+  static const int _maxOff = 1 << 13;
 
   /// Maximum match length (reference) allowed.
-  static const _maxRef = (1 << 8) + (1 << 3);
+  static const int _maxRef = (1 << 8) + (1 << 3);
 
   /// The number of bytes at the end of the block that are not processed by the
   /// main compression loop.

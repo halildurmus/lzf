@@ -5,25 +5,40 @@
 [![License: BSD-3-Clause][license_badge]][license_link]
 [![codecov][codecov_badge_link]][codecov_link]
 
-A Dart implementation of the LZF, a fast and lightweight data compression
-algorithm.
+**A Dart implementation of the LZF, a fast, lightweight compression algorithm
+optimized for speed.**
 
-LZF is optimized for speed rather than achieving the highest compression ratios,
-making it ideal for scenarios where performance is the priority, such as
-real-time data processing and low-latency systems.
+LZF is optimized for speed over compression ratio. Ideal for real-time data
+processing, caching layers, and low-latency systems where throughput matters
+most.
 
-The data format and algorithm is based on the C library
-[liblzf](https://software.schmorp.de/pkg/liblzf.html) by Marc Lehmann and the
-implementation is based on the Java library
-[compress-lzf](https://github.com/ning/compress) by Tatu Saloranta.
+> The data format and algorithm are based on the C library
+> [liblzf](https://software.schmorp.de/pkg/liblzf.html) by Marc Lehmann, with
+> the implementation adapted from the Java library
+> [compress-lzf](https://github.com/ning/compress) by Tatu Saloranta.
+>
+> For more details about the LZF data format, refer to the
+> [LZF Format Specification][].
 
-For more details about the LZF data format, refer to the
-[LZF Format Specification][].
+## 🚀 Getting Started
 
-## Usage
+Add the package to your `pubspec.yaml`:
 
-To use the `lzf` package, import it into your Dart project and follow the
-example below:
+```yaml
+dependencies:
+  lzf: ^0.1.1
+```
+
+Then import it:
+
+```dart
+import 'package:lzf/lzf.dart';
+```
+
+## ⚡ Quick Example
+
+Compress data with `LZFEncoder.encode()` and decompress it with
+`LZFDecoder.decode()`. Both works with `Uint8List`:
 
 ```dart
 import 'dart:convert';
@@ -61,10 +76,10 @@ void main() {
 }
 ```
 
-## Feature requests and bugs
+## 🐞 Features and Bugs
 
-Please file feature requests and bugs at the
-[issue tracker][issue_tracker_link].
+If you encounter bugs or need additional functionality, please
+[file an issue][issue_tracker_link].
 
 [ci_badge]: https://github.com/halildurmus/lzf/actions/workflows/lzf.yml/badge.svg
 [ci_link]: https://github.com/halildurmus/lzf/actions/workflows/lzf.yml

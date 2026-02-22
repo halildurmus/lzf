@@ -1,9 +1,9 @@
-/// A Dart implementation of the LZF, a fast and lightweight data compression
-/// algorithm.
+/// This library provides a Dart implementation of the LZF, a fast and
+/// lightweight data compression algorithm.
 ///
-/// LZF is optimized for speed rather than achieving the highest compression
-/// ratios, making it ideal for scenarios where performance is the priority,
-/// such as real-time data processing and low-latency systems.
+/// LZF is optimized for speed over compression ratio. Ideal for real-time data
+/// processing, caching layers, and low-latency systems where throughput matters
+/// most.
 library;
 
 export 'src/chunk.dart';
