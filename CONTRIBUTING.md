@@ -1,6 +1,6 @@
 # Contributing
 
-Thank you for your interest in contributing to **lzf**!
+Thank you for your interest in contributing to `package:lzf`!
 
 This guide provides everything you need to get started and make your
 contributions effective and rewarding.
@@ -22,9 +22,10 @@ We strive to maintain a welcoming and inclusive community, so please read our
 - **🐛 Report Bugs**: Found a bug? Let us know on our [GitHub Issues] page.
 - **📝 Improve Documentation**: High-quality documentation is crucial. Help us
   improve it by refining the existing docs or adding new content.
-- **💬 Give Feedback**: Share your experience using **lzf**, what features you’d
-  like, and what works well on [GitHub Discussions].
-- **📢 Share lzf**: Spread the word about this project to reach more users.
+- **💬 Give Feedback**: Share your experience using `package:lzf`, what
+  features you'd like, and what works well on [GitHub Discussions].
+- **📢 Share `package:lzf`**: Spread the word about this project to reach more
+  users.
 - **💻 Contribute to the Codebase**: Work on new features or tackle
   [open issues][GitHub Issues] — all contributions are highly appreciated!
 
@@ -32,7 +33,7 @@ We strive to maintain a welcoming and inclusive community, so please read our
 
 ### ⚙️ Requirements
 
-- [Dart](https://dart.dev) version `3.7` or higher
+- [Dart](https://dart.dev) version `3.11` or higher
 - [git-cliff](https://git-cliff.org) for generating changelogs
 - [Lefthook](https://github.com/evilmartians/lefthook) for managing Git hooks
 
@@ -41,7 +42,7 @@ set up the project.
 
 ### 📥 Cloning the Repository
 
-Clone your fork of **lzf** to your local machine:
+Clone your fork of the `package:lzf` to your local machine:
 
 ```cmd
 git clone https://github.com/<your-username>/lzf.git
@@ -69,13 +70,13 @@ before commits.
 
 ### ✅ Running Tests
 
-To run tests for **lzf**, use:
+To run tests for the `package:lzf`, use:
 
 ```cmd
 dart test
 ```
 
-_We require tests for each feature or bug fix. If you’re unsure how to write_
+_We require tests for each feature or bug fix. If you're unsure how to write_
 _tests for your changes, feel free to ask on the relevant GitHub issue page._
 
 ## 🚀 Committing Your Work and Preparing a Pull Request
@@ -100,8 +101,8 @@ Please use the following format for commit messages:
 
 Examples:
 
-- `feat: add RegistryKey.onChanged stream for monitoring registry key changes`
-- `fix: resolve an issue with the RegistryKey.createValue method`
+- `feat: add LZFChunk.isValidChunk method`
+- `fix: resolve an issue with the ChunkDecoder.decode method`
 
 _Commit messages are validated with a GitHub action, so be sure to use the_
 _correct format when making a pull request._
@@ -127,7 +128,7 @@ automatically, and our maintainers will review it.
 Please use the pull request template to provide details about your changes,
 ensuring a smoother review process.
 
-Thank you for contributing to **lzf**! 🎉
+Thank you for contributing to `package:lzf`! 🎉
 
 [Code of Conduct]: https://github.com/halildurmus/lzf/blob/main/CODE_OF_CONDUCT.md
 [Conventional Commits]: https://www.conventionalcommits.org/en/v1.0.0/

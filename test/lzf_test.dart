@@ -10,10 +10,9 @@ void main() {
   group('LZF round-trip encode/decode', () {
     test('using sample files', () {
       // Load all files from test/data recursively.
-      final files =
-          Directory(
-            'test/data',
-          ).listSync(recursive: true).whereType<File>().toList();
+      final files = Directory(
+        'test/data',
+      ).listSync(recursive: true).whereType<File>().toList();
 
       // Ensure we have files to test.
       check(

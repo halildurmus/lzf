@@ -9,11 +9,15 @@ Go to the [GitHub Actions] tab and trigger the [Prepare Release] workflow.
 This workflow will:
 
 - 🔼 **Bump** the `version` in the `pubspec.yaml` file based on commit messages
-  _(e.g., `6.0.0` ➡️ `6.1.0`)_.
+  _(e.g., `0.1.0` ➡️ `0.1.1`)_.
 - 📝 **Update** the `CHANGELOG.md` file with the latest changes.
 
-After making these changes, the workflow will create a pull request (PR)
-_(e.g., **`chore(release): v6.1.0`**)_.
+After making these changes, the workflow will create a pull request (PR) with
+title:
+
+```text
+chore(release): `package:lzf` v0.1.1
+```
 
 ## 2️⃣ Review and Merge the PR
 
